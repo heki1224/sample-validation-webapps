@@ -1,0 +1,20 @@
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<Target>System.out</Target>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<!-- <Pattern>%d{HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</Pattern> -->
+			<pattern>%date{yyyy-MM-dd HH:mm:ss} %level %logger{0} - %msg
+				\(%file:%line\)%n</pattern>
+		</layout>
+	</appender>
+
+	<root>
+		<level value="debug" />
+		<appender-ref ref="STDOUT" />
+	</root>
+	<logger name="sample.validation.web">
+		<level value="DEBUG" />
+	</logger>
+
+</configuration>

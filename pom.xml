@@ -189,13 +189,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<!-- Additional Repositories -->
-	<repositories>
-		<repository>
-			<id>public</id>
-			<name>Internal Repository</name>
-			<url>http://172.25.139.118:8081/nexus/content/groups/public/</url>
-		</repository>
-	</repositories>
 </project>
